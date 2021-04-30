@@ -39,7 +39,7 @@ export default function Modal(props) {
 
     return (
         <ModalBody className='modal' open={open}>
-            <ModalContent contentStyle={contentStyle}>
+            <ModalContent contentStyle={contentStyle} className='modal-content'>
                 {
                     handleClose ?
                     <ModalCloseButton onClick={handleClose}> 

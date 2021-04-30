@@ -39,7 +39,6 @@ function Calendar(props) {
 
   const weather = useSelector(selectors.selectWeatherData);
   const reminders = useSelector(selectors.selectCalendarReminders);
-  console.log('reminders: ', reminders);
   const view = useSelector(selectors.selectView);
 
   const countries = useMemo(() => {
@@ -131,7 +130,7 @@ function Calendar(props) {
 
   const deleteReminder = useCallback((idx) => {
     const newRemindersArr = reminders[selectedYear][selectedMonth][selectedDay].filter(( rem,i ) => i !== idx );
-    console.log('newRemindersArr: ', newRemindersArr);
+    
     dispatch(actions.controlData({
       reminders: {
           ...reminders,

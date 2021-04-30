@@ -53,7 +53,10 @@ li {
 .container {
   width: 800px;
   margin: 2rem auto;
-  background: ghostwhite
+  background: ghostwhite;
+  @media (max-width: 768px) {
+    width: 759px
+  }
 }
 
 .readme {
@@ -105,7 +108,7 @@ li {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -113,7 +116,15 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2000
+  z-index: 2000;
+  .modal-content {
+    @media (max-width: 768px) {
+      max-width: 100%;
+      max-height: 100%;
+      min-width: 90%;
+      padding: 1em
+    }
+  }
 }
 
 label {
