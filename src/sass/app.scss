@@ -1,0 +1,147 @@
+html,
+body {
+  margin: 0;
+  color: #555;
+  background: ghostwhite;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+
+  > div {
+    margin-top: 0;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+* + * {
+  margin-top: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+  line-height: 1.1;
+
+  + * {
+    margin-top: 0.5rem;
+  }
+}
+
+strong {
+  color: #222;
+}
+
+li {
+  margin-top: 0.25rem;
+}
+
+.container {
+  width: 800px;
+  margin: 2rem auto;
+  background: ghostwhite
+}
+
+.readme {
+  width: 800px;
+  margin: 2rem calc((100vw - 800px) / 2);
+}
+
+.counter {
+  $buttonBg: #003874;
+  $buttonBgLight: #325f8f;
+  $buttonBgDark: #003268;
+  $buttonTextColor: #e5ebf1;
+
+  button {
+    display: inline-block;
+    margin-right: 0.8rem;
+    margin-bottom: 1.2rem;
+    padding: 0.8rem 1.2rem;
+    overflow: hidden;
+    color: $buttonTextColor;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.0325rem;
+    text-transform: lowercase;
+    text-decoration: none;
+
+    background: $buttonBg;
+    border: none;
+    border-color: none;
+    border-radius: 0.8rem;
+    -webkit-box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.52);
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.52);
+
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    transition-property: background, transform;
+
+    &:active,
+    &:focus,
+    &:hover {
+      outline: none;
+      background: $buttonBgLight;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000
+}
+
+label {
+  font-size: 1.25em;
+  font-weight: bold
+}
+
+select, input {
+  padding: 0.45em 0.75em;
+  background: #ADBAC0;
+  border-radius: 15px;
+  border: 0
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  margin: 2em 0;
+  padding-right: 1em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
