@@ -1,7 +1,3 @@
-<div align="center">
-    <img src="https://raw.githubusercontent.com/Jobsity/ReactChallenge/main/src/assets/jobsity_logo_small.png"/>
-</div>
-
 # React Challenge Calendar
 
 The application has a workind Calendar, where the user can select a Country, City, Temperature Scale, Months and up to 10 Years ahead.
